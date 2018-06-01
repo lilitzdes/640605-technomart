@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Техномарт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  </body>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-logo">
+          <img src="img/index-logo.svg" alt="Логотип магазина Техномарт" width="220" height="47">
+          </a>
+            <form action="/search/catalog/" method="get" class="search">
+                <input type="search" name="main-search" id="main-search" value="Поиск:">
+            </form>
+            <div class="shop-list">
+                <a href="#">
+                    <p>Закладки: 0</p>
+                </a>
+            </div>
+            <div class="basket">
+                <a href="#">
+                    <p>Корзина: 0</p>
+                </a>
+            </div>
+            <div class="checkout">
+                <a href="#">
+                    <p>Оформить заказ</p>
+                </a>
+            </div>
+            <p class="description">Интернет магазин<br> строительных материалов<br> и инструментов для ремонта
+            </p>
+            <div class="contact">
+                <div class="phone">+7 (812) 555-05-05</div>
+                <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <ul>
+                <li class="login-link"><a href="#">Войти</a></li>
+                <li class="login-registration"><a href="#">Регистрация</a></li>
+            </ul>
+
+            <ul class="site-navigation">
+                <li><a href="home.html">Главная</a></li>
+                <li><a href="company.html">Компания</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="offers.html">Спецпредложения</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
 </html>
