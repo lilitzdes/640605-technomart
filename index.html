@@ -57,11 +57,11 @@
             <h1 class="visually-hidden">Магазин строительных материалов Техномарт</h1>
             <ul class="category-list">
                 <!--Как добавлять маленькие картинки внутрь разделов? Какой-то тег нужен? -->
-                <li><a href="#">На любой вкус</a>Материалы</li>
-                <li><a href="#">На все случаи</a>Инструмент</li>
-                <li><a href="#">Для стройки</a>Техника</li>
-                <li><a href="#">На 350 товаров</a>Скидки 50%</li>
-                <li><a href="#">Бесплатно</a>Доставка</li>
+                <li><a class="btn" href="#">На любой вкус</a>Материалы</li>
+                <li><a class="btn" href="#">На все случаи</a>Инструмент</li>
+                <li><a class="btn" href="#">Для стройки</a>Техника</li>
+                <li><a class="btn" href="#">На 350 товаров</a>Скидки 50%</li>
+                <li><a class="btn" href="#">Бесплатно</a>Доставка</li>
                 <!-- Слайдер вообще не понимаю, как сделать? Его наверное в div вообще отдельно? -->
                 <li><a href="/catalog.html" class="button">Открыть каталог</a>Слайдер</li>
             </ul>
@@ -146,40 +146,39 @@
             </div>
             <div class="producer-list">
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="Bosch" width="126" height="37"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="Bosch" width="126" height="37"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="Makita" width="123" height="40"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="Makita" width="123" height="40"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="Dewalt" width="146" height="44"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="Dewalt" width="146" height="44"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="Интерскол" width="200" height="88"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="Интерскол" width="200" height="88"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="Hitachi" width="169" height="31"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="Hitachi" width="169" height="31"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="LG" width="121" height="73"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="LG" width="121" height="73"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="AEG" width="151" height="96"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="AEG" width="151" height="96"></a>
                 </div>
                 <div class="producer-item">
-                    <a href="#"><img src="img/index-logo.svg" alt="Metabo" width="204" height="69"></a>
+                    <a href="#" target="_blank"><img src="img/index-logo.svg" alt="Metabo" width="204" height="69"></a>
                 </div>
             </div>
-
         </section>
         <section class="service">
             <!-- тут вообще не понимаю, как соединить, чтобы принажатии на пункты появлялась инфо. Опять же слайдер.-->
             <h2>Сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <ul>
-                <li>Доставка</li>
-                <li>Гарантия</li>
-                <li>Кредит</li>
+            <ul class="service-list">
+                <li class="service-item">Доставка</li>
+                <li class="service-item">Гарантия</li>
+                <li class="service-item">Кредит</li>
             </ul>
         </section>
         <section class="about-company">
@@ -204,7 +203,7 @@
 
     </main>
     <footer class="main-footer">
-        <div class="footer-info">
+        <div class="footer-top">
             <a class="footer-logo">
           <img src="img/index-logo.svg" alt="Логотип магазина Техномарт" width="220" height="47">
           </a>
@@ -225,7 +224,7 @@
                 <li><a href="offers.html">Спецпредложения</a></li>
             </ul>
         </div>
-        <div>
+        <div class="footer-bottom">
             <p class="footer-copyright">&copy; 2010-2017 Компания &laquo;Техномарт&raquo; Все права защищены</p>
             <div class="footer-social">
                 <ul>
@@ -234,8 +233,10 @@
                     <li><a class="social-button" href="#">Инстаграм</a></li>
                 </ul>
             </div>
+            <div class="footer-feedback">
             <p class="feedback"><a href="#">mail@htmlacademy.ru</a>Обратная связь:</p>
             <p class="developed"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>Разработано -</p>
+            </div>
         </div>
     </footer>
 </body>
