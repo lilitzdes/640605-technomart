@@ -37,13 +37,7 @@
             <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="user-navigation">
-            <!-- следующая строка не понятно, как писать, чтобы правильно было, по макету. -->
-            <div class="">
-            <li class="login-link"><a href="#">Вход</a>
-            <li class="login-link"><a href="#">Равшан Джамшутович</a>
-            <li class="login-exit"><a href="#">Выход</a>
-            </li>
-            </div>
+            <li class="login-link"><a href="#">Равшан Джамшутович</a><a class="exit" href="#">Выход</a></li>
             <li class="user-order"><a href="#">Мои заказы</a></li>
             <li class="user-room"><a href="#">Личный кабинет</a></li>
         </ul>
@@ -66,22 +60,20 @@
             <li><a href="instrument.html">Инструмент</a></li>
             <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
-        
         <h1 class="page-title">Перфораторы</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр:</h2>
             <!-- Здесь будет форма -->
         </section>
-        <!-- "сортировку" не знаю, как сделать, ну чтобы работала или просто не помню -->
         <div class="toolbar">
-        <ul class="sort-bar">
-            <li class="sort-bar-item"><span>СОРТИРОВКА:</span></li>
-            <li class="sort-bar-item"><span>ПО ЦЕНЕ</span></li>
-            <li class="sort-bar-item"><span>ПО ТИПУ</span></li>
-            <li class="sort-bar-item"><span>ПО ФУНКЦИОНАЛУ</span></li>
-            <li class="sort-bar-item-2"><span></span></li>
-            <li class="sort-bar-item-2"><span></span></li>
-        </ul>
+            <ul class="sort-bar">
+                <li class="sort-bar-item"><a href="#">СОРТИРОВКА:</a></li>
+                <li class="sort-bar-item"><a href="#">ПО ЦЕНЕ</a></li>
+                <li class="sort-bar-item"><a href="#">ПО ТИПУ</a></li>
+                <li class="sort-bar-item"><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
+                <li class="sort-bar-item-2"><a href="#"></a></li>
+                <li class="sort-bar-item-2"><a href="#"></a></li>
+            </ul>
         </div>
         <section class="popular-product">
             <div class="headline">
@@ -104,6 +96,10 @@
                         <span class="old-price">32500 P.</span>
                         <a class="button-price" href="#">25500 P.</a>
                     </p>
+                    <div class="hidden-btn">
+                        <a href="#">КУПИТЬ</a>
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
                 </li>
                 <li class="catalog-item">
                     <h3>
@@ -120,6 +116,10 @@
                         <span class="old-price">22500 P.</span>
                         <a class="button-price" href="#">15500 P.</a>
                     </p>
+                    <div class="hidden-btn">
+                        <a href="#">КУПИТЬ</a>
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
                 </li>
                 <li class="catalog-item">
                     <h3>
@@ -136,6 +136,10 @@
                         <span class="old-price">30500 P.</span>
                         <a class="button-price" href="#">25500 P.</a>
                     </p>
+                    <div class="hidden-btn">
+                        <a href="#">КУПИТЬ</a>
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
                 </li>
 
                 <li class="catalog-item">
@@ -152,18 +156,24 @@
                     <p class="catalog-item-price">
                         <a class="button-price" href="#">12500 P.</a>
                     </p>
+                    <div class="hidden-btn">
+                        <a href="#">КУПИТЬ</a>
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
                 </li>
             </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
+            </ul>
         </section>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>
-        <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-        <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и добавления отверстий в кирпиче, бетоне и камне. Существует электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-    </main>   
+        <section class="seo-text">
+            <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и добавления отверстий в кирпиче, бетоне и камне. Существует электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </section>
+    </main>
     <footer class="main-footer">
         <div class="footer-top">
             <a class="footer-logo" href="index.html">
@@ -196,12 +206,12 @@
                 </ul>
             </div>
             <div class="footer-feedback">
-            <p class="feedback"><a href="#">mail@htmlacademy.ru</a>Обратная связь:</p>
-            <p class="developed"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>Разработано -</p>
+                <p class="feedback"><a href="#">mail@htmlacademy.ru</a>Обратная связь:</p>
+                <p class="developed"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>Разработано -</p>
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
