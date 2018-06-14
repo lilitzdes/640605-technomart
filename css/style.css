@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: white;
+  background-color: white;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.site-navigation,
+.user-navigation,
+.category-list,
+.catalog-list,
+.tabs-nav,
+.tabs-list,
+.company-list,
+.footer-navigation,
+.footer-catalog {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f4f7f9;
+}
+
+.upper-container {
+  background-color: #32425c;
+}
+
+div .logo {
+  margin: 0;
+}
+
+.logo {
+  padding: 14px 0;
+  width: 220px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: red;
+  box-shadow: inset 0 -5px 0 0 #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.search:hover,
+.shop-list:hover,
+.basket:hover {
+  background-color: #212a3a;
+}
+
+.shop-list:active,
+.basket:active {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.checkout {
+  padding: 13px 0;
+  text-align: center;
+  width: 150px;
+  background-color: #63a63e;
+}
+
+.checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout:active {
+  color: #8b8e94;
+  background-color: #518534;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 23px;
+  width: 196px;
+  color: #ee3643;
+  font-style: italic;
+
+}
+
+.phone {
+  font-size: 21px;
+  line-height: 21px;
+  width: 270px;
+  color: #e9292a;
+  border: 2px solid white;
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+
+}
+
+.user-navigation {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #f4f7f9;
+
+}
+
+.login-link {
+  background-color: white;
+  color: black;
+}
+
+.login-registration {
+  background-color: white;
+  color: black;
+}
+
+.login-link:hover,
+.login-registration:hover {
+  color: #ee3643;
+}
+
+.login-link:active,
+.login-registration:active {
+  color: #c5c5c5;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  color: #a8abaf;
+  background-color: #1d2739;
+}
+
+.category-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: rgba(229, 229, 229, 0.2);
+  border: none;
+}
+
+.btn:hover {
+  background-color: #cccccc:
+}
+
+.btn:active {
+  background-color: #b2b2b2;
+}
+
+.list-1,
+.list-5 {
+  background-color: #ffbf47;
+}
+
+.list-2 {
+  background-color: #3bbce3;
+}
+
+.list-3 {
+  background-color: #dc91d8;
+}
+
+.list-4 {
+  background-color: #8ed78f;
+}
