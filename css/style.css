@@ -1,18 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: normal;
   color: white;
   list-style: none;
+  font-weight: normal;
+  font-size: 17px;
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  line-height: 18px;
 }
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 .site-navigation,
@@ -33,31 +31,28 @@ a {
 
 .upper-container {
   background-color: #293449;
-}
-
-div .logo {
-  margin: 0;
+  color: white;
 }
 
 .logo {
+  margin: 0;
   padding: 14px 0;
   width: 220px;
-  font-size: 24px;
-  line-height: 24px;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  color: white;
   text-align: center;
   text-transform: uppercase;
-  background-color: red;
-  box-shadow: inset 0 -5px 0 0 #b52933;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .logo:hover {
   background-color: #ca2c37;
-  box-shadow: inset 0 -5px 0 0 #9a212a;
 }
 
 .logo:active {
   background-color: #ba2732;
-  box-shadow: inset 0 -5px 0 0 #8e1e26;
 }
 
 .shop-list:hover,
@@ -66,21 +61,21 @@ div .logo {
 }
 
 .search {
+  position: relative;
   width: 270px;
   vertical-align: middle;
   white-space: nowrap;
-  position: relative;
 }
 
 .search input.main-search {
+  float: left;
+  padding-left: 45px;
   width: 270px;
   height: 42px;
-  background: #293449;
   border: none;
-  font-size: 17px;
-  float: left;
+  background: #293449;
   color: black;
-  padding-left: 45px;
+  font-size: 17px;
 }
 
 .search input.main-search:hover {
@@ -106,17 +101,21 @@ input[type="search"]::-ms-input-placeholder {
   color: white;
 }
 
+.navigation a {
+  color: #fff;
+}
+
 .shop-list:active,
 .basket:active {
-  color: rgba(0, 0, 0, 0.6);
   background-color: #161d29;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .checkout {
   padding: 13px 0;
-  text-align: center;
   width: 150px;
   background-color: #63a63e;
+  text-align: center;
 }
 
 .checkout:hover {
@@ -124,47 +123,39 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .checkout:active {
-  color: rgba(0, 0, 0, 0.5);
   background-color: #518534;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .description {
-  font-size: 16px;
-  line-height: 23px;
   width: 196px;
   color: #ee3643;
   font-style: italic;
-
+  font-size: 16px;
+  line-height: 23px;
 }
 
 .phone {
+  width: 270px;
+  border: 2px solid white;
+  color: #e9292a;
   font-size: 21px;
   line-height: 21px;
-  width: 270px;
-  color: #e9292a;
-  border: 2px solid white;
 }
 
 .adress {
+  color: #32425c;
   font-size: 14px;
   line-height: 24px;
-  color: #32425c;
-
 }
 
 .user-navigation {
+  background-color: #f4f7f9;
   font-size: 21px;
   line-height: 21px;
-  background-color: #f4f7f9;
-
 }
 
-.login-link {
-  background-color: white;
-  color: black;
-}
-
-.login-registration {
+.user-navigation a {
   background-color: white;
   color: black;
 }
@@ -179,11 +170,16 @@ input[type="search"]::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-navigation {
-  font-size: 17px;
-  line-height: 17px;
+.site-navigation {
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
+  color: #fff;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.site-navigation a {
+  color: #fff;
 }
 
 .site-navigation a:hover {
@@ -191,8 +187,8 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .site-navigation a:active {
-  color: rgba(250, 250, 250, 0.5);
   background-color: #1d2739;
+  color: rgba(250, 250, 250, 0.5);
 }
 
 .container {
@@ -200,18 +196,22 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .category-list h3 {
+  color: #fff;
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: none;
 }
 
 .btn:hover {
@@ -221,6 +221,7 @@ input[type="search"]::-ms-input-placeholder {
 .btn:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .list-1,
 .list-5 {
@@ -241,32 +242,30 @@ input[type="search"]::-ms-input-placeholder {
 
 .slider {
   background-color: #f4f7f9;
-
 }
 
 .slider h2 {
+  color: white;
   font-size: 36px;
   line-height: 36px;
-  color: white;
 }
 
 .slider p {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
 }
 
 .slider-arrow .slider-button {
   width: 22px;
   height: 40px;
-  color: white;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  color: white;
 }
 
 .slider-button-back {
   background-image: url(/640605-technomart/img/icon-left.svg);
-
 }
 
 .slider-button-next {
@@ -275,14 +274,14 @@ input[type="search"]::-ms-input-placeholder {
 
 
 .button {
-  font-size: 14px;
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-  border-radius: 1px;
-  text-transform: uppercase;
-  background-color: #ee3643;
   border: none;
+  border-radius: 1px;
+  background-color: #ee3643;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .slide .button:hover {
@@ -312,88 +311,109 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .headline h2 {
-  font-size: 30px;
-  line-height: 30px;
+  color: #32425c;
   text-transform: uppercase;
   font-weight: normal;
-  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .catalog-item {
-  font-family: "PT Sans", Arial, sans-serif;
   width: 220px;
   height: 318px;
-  border: 1px solid #f9f5f0;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-item:hover,
 .producer-item:hover {
-  box-shadow: 0 15px 50px -10px #293449;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item h3 {
+  width: 155px;
+  height: 33px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
-  font-weight: bold;
-  width: 190px;
-  height: 64px;
-  color: #000000;
 }
 
-.catalog-item .old-price {
-  font-size: 17px;
-  line-height: 18px;
-  text-align: center;
-  text-decoration: line-through;
-  font-weight: bold;
+.catalog-item-price .old-price {
+  width: 67px;
+  height: 12px;
   color: #a9a9a9;
-}
-
-.catalog-item .button-price {
+  text-decoration: line-through;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+}
+
+
+.catalog-item-price .button-price {
+  width: 141px;
+  height: 38px;
+
   background-image: url(/640605-technomart/img/red-button.svg);
-  font-weight: bold;
+}
+
+.catalog-item-price a {
+  width: 65px;
+  height: 12px;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .hidden-btn {
-  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
   font-size: 14px;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
 }
 
 .hidden-btn a:first-child {
+  width: 41px;
+  height: 10px;
   background-color: #63a63e;
   box-shadow: inset 0 -2px 0 0 #367315;
+  color: #ffffff;
+}
+
+.hidden-btn a:last-child {
+  width: 67px;
+  height: 12px;
+  border: 3px solid #63a63e;
+  background-color: white;
+  color: #32425c;
+  color: #32425c;
 }
 
 .hidden-btn a:first-child:hover {
+  box-shadow: inset 0 -3px 0 #367315;
   background-color: #5fbb2d;
 }
 
 .hidden-btn a:first-child:active {
   background-color: #518534;
-  box-shadow: none;
-}
-
-.hidden-btn a:last-child {
-  color: #32425c;
-  background-color: white;
-  border: 3px solid #63a63e;
 }
 
 .hidden-btn a:last-child:hover {
-  color: #32425c;
-  background-color: white;
   border: 3px solid #32425c;
+  background-color: white;
+  color: #32425c;
 }
 
 .hidden-btn a:last-child:active {
-  color: rgba(50, 66, 92, 0.3);
-  background-color: white;
   border: 3px solid rgba(50, 66, 92, 0.3);
+  background-color: white;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .producer-list {
@@ -407,64 +427,69 @@ input[type="search"]::-ms-input-placeholder {
   height: 145px;
 }
 
-/*  вот тут проблема в фоном картинки, при active */
-
 .producer-item:active {
-  background-color: rgba(250, 250, 250, 0.5);
-  box-shadow: 0 15px 50px -10px rgba(41, 52, 73, 0.5);
+  width: 220px;
+  height: 145px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
-
 .service {
-  background-color: #f4f7f9;
+  background-color: #f2f6f8;
 }
 
 .service h2,
 .about-company h2 {
+  color: #000000;
   font-family: inherit;
+  text-transform: uppercase;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: black;
 }
 
 .service h3 {
-  font-family: inherit;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: normal;
   color: #32425c;
-
+  font-weight: normal;
+  font-size: 36px;
+  font-family: inherit;
+  line-height: 36px;
 }
 
 .service p,
 .about-company p {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: normal;
   color: black;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 24px;
 }
 
 
 .tabs-nav {
-  font-family: inherit;
-  font-size: 31px;
-  color: white;
-  line-height: 30px;
-  font-weight: bold;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   background-color: #32425c;
 }
 
+.tabs-nav a {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+
+}
+
 .tabs-nav li:hover {
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   background-color: #293449;
 }
 
 .tabs-nav a:active,
 .tabs-nav a:focus {
-  background-color: white;
-  color: rgb(50, 66, 92);
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
 }
 
 .tab .button {
@@ -472,34 +497,39 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .company-list {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 30px;
   color: black;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 30px;
 }
 
 .map-close,
 .modal-close {
   width: 21px;
   height: 21px;
-  background-image: url(/640605-technomart/img/icon-close.svg);
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  background-image: url(/640605-technomart/img/icon-close.svg);
+}
+
+.map-popup {
+  width: 940px;
+  height: 448px;
+  box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.35);
 }
 
 .modal-contact {
   width: 620px;
   height: 430px;
-
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75),
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75),
   inset 0 7px 0 0 #ff5357;
 }
 
 .modal-form label {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 18px;
   color: black;
+  font-size: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
 }
 
 .modal-item textarea {
@@ -509,9 +539,9 @@ input[type="search"]::-ms-input-placeholder {
 
 .modal-item input,
 .textarea {
-  font: inherit;
-  background-color: transparent;
   border: 2px solid #b5b5b5;
+  background-color: transparent;
+  font: inherit;
 }
 
 input[type="text"]:focus,
@@ -534,26 +564,33 @@ textarea:focus {
   color: #999999;
 }
 
+.background-btn {
+  width: 620px;
+  height: 112px;
+  background-color: #f1f1f1;
+}
+
 .main-footer {
   background-color: #32425c;
 }
 
 .log {
-  padding: 14px 0;
   width: 220px;
-  font-size: 24px;
-  line-height: 24px;
+  height: 68px;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
   text-align: center;
   text-transform: uppercase;
-  background-color: red;
-  box-shadow: inset 0 -5px 0 0 #b52933;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .footer-contacts,
 .footer-navigation a {
+  color: #f1f5f7;
   font-size: 18px;
   line-height: 24px;
-  color: #f1f5f7;
 }
 
 .footer-navigation a:hover {
@@ -561,14 +598,14 @@ textarea:focus {
 }
 
 .footer-navigation a:active {
-  text-decoration: none;
   color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
 }
 
 .footer-catalog a {
+  color: #ffd180;
   font-size: 18px;
   line-height: 24px;
-  color: #ffd180;
 }
 
 .footer-catalog a:hover {
@@ -576,18 +613,19 @@ textarea:focus {
 }
 
 .footer-catalog a:active {
-  text-decoration: none;
   color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
 }
 
-.footer-bottom {
+.footer-bottom a {
+  color: #ffffff;
   background-color: #293449;
 }
 
 .footer-copyright {
+  color: #fff;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
 }
 
 .footer-social {
@@ -604,14 +642,14 @@ textarea:focus {
 
 .footer-social .social-button:hover,
 .footer-social .social-button:focus {
-  color: white;
-  background-color: red;
+  background-color: #ee3643;
 }
 
 .footer-feedback {
+  color: #fff;
+  text-align: right;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
 }
 
 .footer-feedback a {
@@ -621,11 +659,9 @@ textarea:focus {
 .footer-feedback a:hover {
   color: #ffd180;
   text-decoration: underline;
-
 }
 
 .footer-feedback a:active {
   color: #ee3643;
   text-decoration: none;
-
 }

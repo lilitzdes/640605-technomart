@@ -14,24 +14,23 @@
     <div class="upper-container">
       <a href="#">
         <p class="logo">Техномарт</p>
-      </a>
-      <form class="search" action="/search/catalog/" method="get">
-        <input class="main-search" type="search" name="main-search" id="main-search" placeholder="Поиск:" aria-label="Поиск по сайту">
-        <span class="search-icon"></span>
-      </form>
-      <div class="navigation">
-        <div class="shop-list">
-          <a href="#">Закладки: 0</a>
-          <span class="shop-list-icon"></span>
+        <form class="search" action="/search/catalog/" method="get">
+          <input class="main-search" type="search" name="main-search" id="main-search" placeholder="Поиск:" aria-label="Поиск по сайту">
+          <span class="search-icon"></span>
+        </form>
+        <div class="navigation">
+          <div class="shop-list">
+            <a href="#">Закладки: 0</a>
+            <span class="shop-list-icon"></span>
+          </div>
+          <div class="basket">
+            <a href="#">Корзина: 0</a>
+            <span class="basket-icon"></span>
+          </div>
+          <div class="checkout">
+            <a href="#">Оформить заказ</a>
+          </div>
         </div>
-        <div class="basket">
-          <a href="#">Корзина: 0</a>
-          <span class="basket-icon"></span>
-        </div>
-        <div class="checkout">
-          <a href="#">Оформить заказ</a>
-        </div>
-      </div>
     </div>
     <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта
     </p>
@@ -140,7 +139,6 @@
               <span class="catalog-category">Перфоратор BOSCH</span>
               <span class="catalog-item-title">BFG 9000</span>
             </h3>
-
           </a>
           <div class="hidden-btn">
             <a href="#">Купить</a>
@@ -294,15 +292,14 @@
       </div>
       <div class="hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div id="map-popup">
-          <p>
-            <img src="img/map-popup.jpg" width="940" height="448" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
-          </p>
+        <div class="map-popup" id="map-popup">
+          <img src="img/map-popup.jpg" width="940" height="448" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
           <button class="map-close" type="button" aria-label="Закрыть"></button>
         </div>
       </div>
       <section class="modal modal-contact">
         <h2 class="visually-hidden">Мы обязательно свяжемся с вами!</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="modal-item">
             <label for="form-login">Ваше имя:</label>
@@ -316,9 +313,10 @@
             <label for="form-letter">Текст письма:</label>
             <textarea class="textarea" id="form-letter" name="textarea" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <div class="background-btn">
+            <button class="button" type="submit">Отправить</button>
+          </div>
         </form>
-        <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>
     </section>
   </main>
