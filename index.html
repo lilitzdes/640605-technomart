@@ -14,23 +14,24 @@
     <div class="upper-container">
       <a href="#">
         <p class="logo">Техномарт</p>
-        <form class="search" action="/search/catalog/" method="get">
-          <input class="main-search" type="search" name="main-search" id="main-search" placeholder="Поиск:" aria-label="Поиск по сайту">
-          <span class="search-icon"></span>
-        </form>
-        <div class="navigation">
-          <div class="shop-list">
-            <a href="#">Закладки: 0</a>
-            <span class="shop-list-icon"></span>
-          </div>
-          <div class="basket">
-            <a href="#">Корзина: 0</a>
-            <span class="basket-icon"></span>
-          </div>
-          <div class="checkout">
-            <a href="#">Оформить заказ</a>
-          </div>
+      </a>
+      <form class="search" action="/search/catalog/" method="get">
+        <input class="main-search" type="search" name="main-search" id="main-search" placeholder="Поиск:" aria-label="Поиск по сайту">
+        <span class="search-icon"></span>
+      </form>
+      <div class="navigation">
+        <div class="shop-list">
+          <a href="#">Закладки: 0</a>
+          <span class="shop-list-icon"></span>
         </div>
+        <div class="basket">
+          <a href="#">Корзина: 0</a>
+          <span class="basket-icon"></span>
+        </div>
+        <div class="checkout">
+          <a href="#">Оформить заказ</a>
+        </div>
+      </div>
     </div>
     <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта
     </p>
@@ -107,7 +108,7 @@
                     <h2>Дрели</h2>
                     <p>Соседям на радость!</p>
                   </div>
-                  <a class="button" href="catalog.html">Открыть каталог</a>
+                  <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
                 </div>
               </li>
               <li>
@@ -116,7 +117,7 @@
                     <h2>Перфораторы</h2>
                     <p>Настоящие мужские игрушки</p>
                   </div>
-                  <a class="button" href="catalog.html">Открыть каталог</a>
+                  <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
                 </div>
               </li>
             </ul>
@@ -127,7 +128,7 @@
     <section class="popular-product">
       <div class="headline">
         <h2>Популярные товары:</h2>
-        <a class="button" href="#">Все популярные товары</a>
+        <a class="button button-product" href="#">Все популярные товары</a>
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -213,7 +214,7 @@
     <section class="popular-producer">
       <div class="headline">
         <h2>Популярные производители:</h2>
-        <a class="button" href="#">Все производители</a>
+        <a class="button button-producer" href="#">Все производители</a>
       </div>
       <div class="producer-list">
         <div class="producer-item">
@@ -266,7 +267,7 @@
           <li class="tab">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
-            <a class="button" href="#">Отправить заявку</a>
+            <a class="button button-application" href="#">Отправить заявку</a>
             <img src="img/credit.png" alt="" width="389" height="283">
           </li>
         </ul>
@@ -282,13 +283,13 @@
           <li>Автотрединг</li>
           <li>ЖелдорЭкспедиция</li>
         </ul>
-        <a class="button" href="#map-popup">Подробнее о компании</a>
+        <a class="button button-company" href="#map-popup">Подробнее о компании</a>
       </div>
       <div>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a class="popup" href="https://www.google.ru/maps"><img src="img/map.jpg" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург" width="300" height="158"></a>
-        <a class="button" href="#">Заблудились? Напишите нам!</a>
+        <a class="button button-map" href="#">Заблудились? Напишите нам!</a>
       </div>
       <div class="hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -298,8 +299,8 @@
         </div>
       </div>
       <section class="modal modal-contact">
-        <h2 class="visually-hidden">Мы обязательно свяжемся с вами!</h2>
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        <h2 class="visually-hidden">Мы обязательно свяжемся с вами!</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="modal-item">
             <label for="form-login">Ваше имя:</label>
@@ -314,7 +315,7 @@
             <textarea class="textarea" id="form-letter" name="textarea" placeholder="В свободной форме"></textarea>
           </p>
           <div class="background-btn">
-            <button class="button" type="submit">Отправить</button>
+            <button class="button button-submit" type="submit">Отправить</button>
           </div>
         </form>
       </section>
