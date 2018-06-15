@@ -247,6 +247,7 @@ input[type="search"]::-ms-input-placeholder {
 .slider h2 {
   font-size: 36px;
   line-height: 36px;
+  color: white;
 }
 
 .slider p {
@@ -299,11 +300,11 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .slider-list li:nth-child(1) {
-  background-image: url(/640605-technomart/img/slider-2.jpg);
+  background-image: url(../img/slider-2.jpg);
 }
 
 .slider-list li:nth-child(2) {
-  background-image: url(/640605-technomart/img/slider-1.jpg);
+  background-image: url(../img/slider-1.jpg);
 }
 
 .headline {
