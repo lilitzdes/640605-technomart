@@ -73,7 +73,6 @@ a {
 }
 
 .search input.main-search {
-  float: left;
   padding-left: 45px;
   width: 270px;
   height: 42px;
@@ -96,6 +95,8 @@ a {
 input[type="search"]::placeholder {
   color: white;
   opacity: 1;
+  line-height: 18px;
+  font-size: 17px;
 }
 
 input[type="search"]:-ms-input-placeholder {
