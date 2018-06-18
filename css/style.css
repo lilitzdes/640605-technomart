@@ -78,13 +78,13 @@ html {
 
 .navigation-wrapper .navigation {
   display: flex;
-
-  justify-content: ;
 }
 
 
 .logo {
+  display: inline-block;
   margin: 0;
+  margin-bottom: -5px;
   padding: 14px 55px;
   width: 220px;
   background-color: #ee3643;
@@ -164,17 +164,16 @@ input[type="search"]::-ms-input-placeholder {
   margin: 0;
   padding: 0;
   width: 450px;
-  height: 42px;
 }
 
 .navigation a {
+  display: inline-block;
   color: #fff;
 }
 
 .navigation div {
-  padding-top: 14px;
+  padding: 14px 0;
   width: 150px;
-  height: 42px;
   text-align: center;
 }
 
@@ -197,19 +196,26 @@ input[type="search"]::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
+
 .login-wrapper {
-  padding-left: 183px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-container {
+  margin-bottom: 44px;
   width: 100%;
 }
 
-.login-wrapper .wrapper {
+.middle-container .container-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .description {
   width: 196px;
-  height: 60px;
+  margin-left: 53px;
   color: #ee3643;
   font-style: italic;
   font-size: 16px;
@@ -218,16 +224,25 @@ input[type="search"]::-ms-input-placeholder {
 
 .phone {
   width: 270px;
+  margin: 0;
   border: 2px solid white;
   color: #e9292a;
+  padding: 10px 0 10px 72px;
+
   font-size: 21px;
   line-height: 21px;
 }
 
 .adress {
+  margin: 0;
+  padding: 10px;
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
+}
+
+.container-wrapper .user-navigation {
+  display: flex;
 }
 
 .user-navigation {
@@ -236,18 +251,24 @@ input[type="search"]::-ms-input-placeholder {
   background-color: #f4f7f9;
 }
 
+
 .user-navigation a {
+  display: block;
   background-color: white;
-  color: black;
+  color: #000000;
+  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
 }
 
 .login-link a {
-  color: #000000;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 21px;
+  padding: 14px 27px 15px 48px;
+  margin-right: 10px;
+
+}
+
+.login-registration a {
+  padding: 14px 24px 15px 25px;
 }
 
 .user-order a,
@@ -286,12 +307,18 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .main-navigation {
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-bottom: 60px;
 }
 
+.main-navigation .site-navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 10;
+}
+
+
 .site-navigation {
-  margin-bottom: 60px;
+  margin: 0;
   padding: 0;
   width: 940px;
   background-color: #32425c;
@@ -299,10 +326,16 @@ input[type="search"]::-ms-input-placeholder {
   color: #fff;
   font-size: 17px;
   line-height: 17px;
+
 }
 
+
 .site-navigation a {
+  display: block;
+  padding: 22px 33px 26px 33px;
   color: #fff;
+  text-align: center;
+
 }
 
 .site-navigation a:hover {
