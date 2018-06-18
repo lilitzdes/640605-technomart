@@ -56,7 +56,6 @@ html {
 .navigation-wrapper {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -67,14 +66,13 @@ html {
 }
 
 .container-wrapper {
-  padding: 0 130px;
   width: 960px;
-  height: 42px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .upper-container .container-wrapper {
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -87,9 +85,8 @@ html {
 
 .logo {
   margin: 0;
-  padding: 14px 0;
+  padding: 14px 55px;
   width: 220px;
-  height: 47px;
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   color: white;
@@ -207,8 +204,7 @@ input[type="search"]::-ms-input-placeholder {
 
 .login-wrapper .wrapper {
   display: flex;
-
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .description {
