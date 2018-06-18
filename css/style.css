@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -32,6 +36,42 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0;
+}
+
+.row > [class^=col-] {
+  padding: 0 10px;
+
 }
 
 .site-navigation,
@@ -58,6 +98,12 @@ html {
   flex-direction: column;
   align-items: center;
 }
+
+.category-wrapper {
+  margin-bottom: 53px;
+  background-color: #fff;
+}
+
 
 .upper-container {
   margin-bottom: 46px;
@@ -306,14 +352,11 @@ input[type="search"]::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-navigation {
-  margin-bottom: 60px;
-}
+
 
 .main-navigation .site-navigation {
   display: flex;
   justify-content: space-around;
-  flex-grow: 10;
 }
 
 
@@ -327,6 +370,10 @@ input[type="search"]::-ms-input-placeholder {
   font-size: 17px;
   line-height: 17px;
 
+}
+
+.site-wrapper {
+  margin-bottom: 46px;
 }
 
 
@@ -484,7 +531,6 @@ input[type="search"]::-ms-input-placeholder {
 
 .category-list h3 {
   color: #fff;
-  text-transform: uppercase;
   font-size: 24px;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
@@ -528,9 +574,6 @@ input[type="search"]::-ms-input-placeholder {
   background-color: #8ed78f;
 }
 
-.slider {
-  background-color: #f4f7f9;
-}
 
 .slider h2 {
   color: white;
@@ -561,6 +604,25 @@ input[type="search"]::-ms-input-placeholder {
   background-image: url(../img/icon-right.svg);
 }
 
+.slider-nav {
+  position: absolute;
+}
+
+.slider-nav .active {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.slider-nav .dot {
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 
 .button {
   border: none;
@@ -571,6 +633,7 @@ input[type="search"]::-ms-input-placeholder {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
@@ -582,11 +645,28 @@ input[type="search"]::-ms-input-placeholder {
   background-color: #ba2732;
 }
 
-.slider-list li {
-  width: 620px;
-  height: 266px;
-  list-style: none;
+.slider {
+  position: relative;
+
 }
+
+.slider-arrow {
+  position: absolute;
+}
+
+.slider-list {
+  padding: 0;
+}
+
+.slider-list li {
+  min-height: 266px;
+}
+
+.slider-list li:nth-child(2) {
+  display: none;
+
+}
+
 
 .slider-list li:nth-child(1) {
   background-image: url(../img/slider-2.jpg);
@@ -596,12 +676,36 @@ input[type="search"]::-ms-input-placeholder {
   background-image: url(../img/slider-1.jpg);
 }
 
+.popular-product {
+  margin-bottom: 20px;
+}
+
+.product-wrapper {
+  margin-bottom: 20px;
+}
+
+
+.headline-product,
 .headline {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
   background-color: #f9f5f0;
 }
 
-.headline h2 {
+.button-product {
+  display: inline-block;
+  padding: 14px 55px;
+  text-align: center;
+  margin: 0;
+}
+
+.headline-product h2 {
+  display: inline-block;
   color: #32425c;
+  text-align: center;
+  margin: 0;
+  padding: 30px 363px 30px 20px;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 30px;
@@ -704,6 +808,26 @@ input[type="search"]::-ms-input-placeholder {
   border: 3px solid rgba(50, 66, 92, 0.3);
   background-color: white;
   color: rgba(50, 66, 92, 0.3);
+}
+
+.button-producer {
+  display: inline-block;
+  padding: 13px 70px;
+  text-align: center;
+  margin: 0;
+}
+
+.headline h2 {
+  display: inline-block;
+  color: #32425c;
+  margin: 0;
+  padding: 33px 273px 30px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 30px;
 }
 
 .producer-list {
