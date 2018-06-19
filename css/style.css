@@ -104,7 +104,7 @@ html {
 }
 
 .container-wrapper {
-  width: 1200px;
+  width: 960px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -936,8 +936,7 @@ input[type="search"]::-ms-input-placeholder {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
-.service h2,
-.about-company h2 {
+.service h2 {
   color: #000000;
   margin: 0;
   padding-bottom: 30px;
@@ -947,6 +946,7 @@ input[type="search"]::-ms-input-placeholder {
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
 }
+
 
 .service h3 {
   color: #32425c;
@@ -964,17 +964,6 @@ input[type="search"]::-ms-input-placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
 }
-
-.about-company p {
-  margin: 0;
-  padding-bottom: 30px;
-  color: black;
-  font-weight: normal;
-  font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
-  line-height: 24px;
-}
-
 
 .tabs-nav {
   background-color: #32425c;
@@ -1003,6 +992,27 @@ input[type="search"]::-ms-input-placeholder {
 
 .tab .button {
   background-color: #ff5357;
+}
+
+.about-company p {
+  margin: 0;
+  padding-bottom: 30px;
+  color: black;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 24px;
+}
+
+.about-company h2 {
+  color: #000000;
+  margin: 0;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 30px;
 }
 
 .company-list {
@@ -1043,19 +1053,10 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .button-map {
-  padding: 13px 59px;
+  padding: 13px 61px;
 }
 
 
-
-
-.tabs-list h3 {
-  color: #32425c;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-}
 
 .map-close,
 .modal-close {
@@ -1339,10 +1340,10 @@ textarea:focus {
 
 /* Сетки */
 
-.about-company {
+.about-company .container-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 82px 130px;
+  padding: 84px 0;
 }
 
 .hidden {
@@ -1350,10 +1351,57 @@ textarea:focus {
 }
 
 .delivery {
-  width: 520px;
-  margin-right: 121px;
+  width: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .company-map {
-  width: 305px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
+
+
+/* раздел сервисы */
+
+.service {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-wrapper {
+  width: 100%;
+  background-color: #f4f8fa;
+}
+
+.service-head {
+  align-self: flex-start;
+  padding-top: 68px;
+  margin-bottom: 74px;
+  min-width: 398px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+}
+
+.tab-delivery {}
+
+.service-head p {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs ul {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs-nav {}
