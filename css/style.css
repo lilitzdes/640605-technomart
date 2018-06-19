@@ -651,16 +651,6 @@ input[type="search"]::-ms-input-placeholder {
 
 .slider-nav .active {
   position: absolute;
-  top: 220px;
-  left: 295px;
-  padding: 5px 5px;
-  border: solid 2px #ffffff;
-  border-radius: 8px;
-  background: #f00c0c;
-}
-
-.slider-nav .dot {
-  position: absolute;
   left: 317px;
   top: 222px;
   padding: 0px 0px;
@@ -668,6 +658,16 @@ input[type="search"]::-ms-input-placeholder {
   border-radius: 6px;
   background-color: #ee3643;
   color: #ffffff;
+}
+
+.slider-nav .dot {
+  position: absolute;
+  top: 221px;
+  left: 295px;
+  padding: 5px 5px;
+  border: solid 2px #ffffff;
+  border-radius: 8px;
+  background: #f00c0c;
 }
 
 
