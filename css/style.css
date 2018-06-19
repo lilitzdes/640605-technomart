@@ -965,28 +965,31 @@ input[type="search"]::-ms-input-placeholder {
   line-height: 24px;
 }
 
-.tabs-nav {
+.tabs-nav li {
   background-color: #32425c;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
 }
 
 .tabs-nav a {
+  display: block;
+  padding: 19px 140px 20px 22px;
   color: #ffffff;
   font-weight: 700;
   font-size: 21px;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
 .tabs-nav li:hover {
   background-color: #293449;
-  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
 .tabs-nav a:active,
 .tabs-nav a:focus {
   background-color: #ffffff;
-  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   color: #32425c;
 }
 
@@ -1366,7 +1369,7 @@ textarea:focus {
 
 /* раздел сервисы */
 
-.service {
+.main-service {
   display: flex;
   flex-direction: row;
 }
@@ -1383,25 +1386,65 @@ textarea:focus {
   min-width: 398px;
 }
 
+.service-head h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.service-head p,
+.tab-delivery p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.right {
-  display: flex;
-}
-
-.tab-delivery {}
-
-.service-head p {
-  padding: 0;
-  margin: 0;
-}
-
 .tabs ul {
   padding: 0;
-  margin: 0;
+  margin: 0 80px 0 0;
 }
 
-.tabs-nav {}
+.service-slider {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-delivery h3 {
+  margin: 0 0 28px 0;
+  padding: 0;
+  min-width: 160px;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.tab-delivery {
+  min-width: 275px;
+}
+
+.tab-delivery p {
+  margin-bottom: 31px;
+
+}
+
+.tab-delivery .button-application {
+  display: inline-block;
+  padding: 14px 44px;
+}
