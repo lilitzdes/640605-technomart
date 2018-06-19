@@ -104,7 +104,7 @@ html {
 }
 
 .container-wrapper {
-  width: 960px;
+  width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -530,22 +530,23 @@ input[type="search"]::-ms-input-placeholder {
   color: #ee3643;
 }
 
+
 .category-wrapper {
   margin-bottom: 53px;
   background-color: #fff;
 }
 
-
-
 .category-list li {
   min-height: 123px;
 }
 
-.category-list h3 {
+.list-1 {
   display: flex;
-  justify-content: flex-start;
-  padding-top: 26px;
-  padding-left: 23px;
+  flex-direction: column;
+}
+
+.category-list h3 {
+  padding: 26px 0 0 23px;
   margin: auto;
   color: #fff;
   font-size: 24px;
@@ -555,11 +556,12 @@ input[type="search"]::-ms-input-placeholder {
 
 
 
-
-
 .btn {
-  padding: 13px 0;
-  margin-bottom: 22px;
+  display: flex;
+  padding: 13px 24px;
+  margin-left: 23px;
+  margin-right: 140px;
+  min-width: 135px;
   border: none;
   background-color: rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -669,10 +671,6 @@ input[type="search"]::-ms-input-placeholder {
   border-radius: 8px;
   background: #f00c0c;
 }
-
-
-
-
 
 
 .slide-text h2 {
@@ -941,6 +939,8 @@ input[type="search"]::-ms-input-placeholder {
 .service h2,
 .about-company h2 {
   color: #000000;
+  margin: 0;
+  padding-bottom: 30px;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 30px;
@@ -957,8 +957,17 @@ input[type="search"]::-ms-input-placeholder {
   line-height: 36px;
 }
 
-.service p,
+.service p {
+  color: black;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 24px;
+}
+
 .about-company p {
+  margin: 0;
+  padding-bottom: 30px;
   color: black;
   font-weight: normal;
   font-size: 13px;
@@ -997,11 +1006,48 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .company-list {
+  padding: 0;
+  margin: 0 0 35px 0;
   color: black;
   font-size: 18px;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
 }
+
+.company-list li {
+  position: relative;
+  padding-left: 40px;
+}
+
+.company-list li::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+
+.company-map p {
+  width: 179px;
+}
+
+.button-company {
+  padding: 13px 40px;
+}
+
+.company-map img {
+  margin: 0 0 40px 0;
+}
+
+.button-map {
+  padding: 13px 59px;
+}
+
+
+
 
 .tabs-list h3 {
   color: #32425c;
@@ -1288,4 +1334,26 @@ textarea:focus {
 .footer-feedback a:active {
   color: #ee3643;
   text-decoration: none;
+}
+
+
+/* Сетки */
+
+.about-company {
+  display: flex;
+  justify-content: space-between;
+  padding: 82px 130px;
+}
+
+.hidden {
+  display: none;
+}
+
+.delivery {
+  width: 520px;
+  margin-right: 121px;
+}
+
+.company-map {
+  width: 305px;
 }

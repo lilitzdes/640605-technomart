@@ -75,29 +75,36 @@
         <h1 class="visually-hidden">Магазин строительных материалов Техномарт</h1>
         <ul class="category-list row">
           <li class="col-4">
-            <div class="list-1">
+            <div class="list-1 new">
               <div>
                 <h3>Материалы</h3>
                 <a class="btn" href="#">На любой вкус</a>
               </div>
               <div>
                 <img src="img/icon-1.svg" width="44" height="65" alt="">
-                <div class="new"></div>
               </div>
             </div>
           </li>
           <li class="col-4">
             <div class="list-2">
-              <h3>Инструмент</h3>
-              <a class="btn" href="#">На все случаи</a>
-              <img src="img/icon-2.svg" width="75" height="61" alt="">
+              <div>
+                <h3>Инструмент</h3>
+                <a class="btn" href="#">На все случаи</a>
+              </div>
+              <div class="img-cool">
+                <img src="img/icon-2.svg" width="75" height="61" alt="">
+              </div>
             </div>
           </li>
           <li class="col-4">
             <div class="list-3">
-              <h3>Техника</h3>
-              <a class="btn" href="#">Для стройки</a>
-              <img src="img/icon-3.svg" width="78" height="62" alt="">
+              <div>
+                <h3>Техника</h3>
+                <a class="btn" href="#">Для стройки</a>
+              </div>
+              <div>
+                <img src="img/icon-3.svg" width="78" height="62" alt="">
+              </div>
             </div>
           </li>
           <li class="col-8">
@@ -134,14 +141,23 @@
           </li>
           <li class="col-4">
             <div class="list-4">
-              <h3>Скидки 50%</h3>
-              <a class="btn" href="#">На 350 товаров</a>
-              <img src="img/icon-4.svg" width="59" height="72" alt="">
+              <div>
+
+                <h3>Скидки 50%</h3>
+                <a class="btn" href="#">На 350 товаров</a>
+              </div>
+              <div>
+                <img src="img/icon-4.svg" width="59" height="72" alt="">
+              </div>
             </div>
             <div class="list-5">
-              <h3>Доставка</h3>
-              <a class="btn" href="#">Бесплатно</a>
-              <img src="img/icon-5.svg" width="78" height="63" alt="">
+              <div>
+                <h3>Доставка</h3>
+                <a class="btn" href="#">Бесплатно</a>
+              </div>
+              <div>
+                <img src="img/icon-5.svg" width="78" height="63" alt="">
+              </div>
             </div>
           </li>
         </ul>
@@ -321,7 +337,7 @@
       </div>
     </section>
     <section class="about-company">
-      <div>
+      <div class="delivery">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -332,7 +348,7 @@
         </ul>
         <a class="button button-company" href="#map-popup">Подробнее о компании</a>
       </div>
-      <div>
+      <div class="company-map">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a class="popup" href="https://www.google.ru/maps"><img src="img/map.jpg" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург" width="300" height="158"></a>
@@ -345,7 +361,7 @@
           <button class="map-close" type="button" aria-label="Закрыть"></button>
         </div>
       </div>
-      <section class="modal modal-contact">
+      <section class="modal modal-contact hidden">
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
         <h2 class="visually-hidden">Мы обязательно свяжемся с вами!</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
