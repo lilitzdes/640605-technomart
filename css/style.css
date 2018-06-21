@@ -357,13 +357,17 @@ input[type="search"]::-ms-input-placeholder {
 
 
 
-.main-navigation .site-navigation {
+.site-navigation {
   display: flex;
   justify-content: space-around;
+
 }
 
+.site-wrapper {
+  padding-bottom: 60px;
+}
 
-.site-navigation {
+.container-wrapper .site-navigation {
   margin: 0;
   padding: 0;
   width: 940px;
@@ -375,14 +379,9 @@ input[type="search"]::-ms-input-placeholder {
 
 }
 
-.site-wrapper {
-  padding-bottom: 60px;
-}
-
-
 .site-navigation a {
   display: block;
-  padding: 22px 33px 26px 33px;
+  padding: 24px;
   color: #fff;
   text-align: center;
 
@@ -536,6 +535,7 @@ input[type="search"]::-ms-input-placeholder {
   background-color: #fff;
 }
 
+
 .category-list li {
   min-height: 123px;
 }
@@ -543,11 +543,15 @@ input[type="search"]::-ms-input-placeholder {
 .list-1 {
   display: flex;
   flex-direction: column;
+  padding: 23px 0 0 23px;
+  background-color: #ffbf47;
+}
+
+.list-1 img {
+  margin-left: 53px;
 }
 
 .category-list h3 {
-  padding: 26px 0 0 23px;
-  margin: auto;
   color: #fff;
   font-size: 24px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -557,11 +561,8 @@ input[type="search"]::-ms-input-placeholder {
 
 
 .btn {
-  display: flex;
+  display: inline-block;
   padding: 13px 24px;
-  margin-left: 23px;
-  margin-right: 140px;
-  min-width: 135px;
   border: none;
   background-color: rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -582,9 +583,7 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 
-.list-1 {
-  background-color: #ffbf47;
-}
+
 
 .list-2 {
   background-color: #3bbce3;
@@ -630,31 +629,24 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 .slider-button-back {
-  position: relative;
+  position: absolute;
   top: 114px;
   left: 25px;
   background-image: url(../img/icon-left.svg);
 }
 
 .slider-button-next {
-  position: relative;
+  position: absolute;
   top: 114px;
   left: 553px;
   background-image: url(../img/icon-right.svg);
 }
 
 
-
-.slider-nav {
-  width: 100%;
-}
-
-
-
 .slider-nav .active {
   position: absolute;
-  left: 317px;
-  top: 222px;
+  top: 220px;
+  left: 285px;
   padding: 0px 0px;
   border: solid 6px #ffffff;
   border-radius: 6px;
@@ -664,16 +656,17 @@ input[type="search"]::-ms-input-placeholder {
 
 .slider-nav .dot {
   position: absolute;
-  top: 221px;
-  left: 295px;
-  padding: 5px 5px;
+  top: 220px;
+  left: 305px;
+  padding: 4px 4px;
   border: solid 2px #ffffff;
-  border-radius: 8px;
+  border-radius: 6px;
   background: #f00c0c;
 }
 
 
 .slide-text h2 {
+  position: relative;
   margin: 0;
   padding: 27px 0 0 24px;
   color: #ffffff;
@@ -694,11 +687,12 @@ input[type="search"]::-ms-input-placeholder {
 }
 
 
-.button-catalog {
-  position: absolute;
-  top: 195px;
-  margin: 0 0 25px 22px;
-  padding: 14px 45px;
+.slide a {
+  display: block;
+  width: 195px;
+  margin: 120px 0 0 25px;
+  padding: 12px 47px;
+
 
 }
 
@@ -1236,11 +1230,13 @@ textarea:focus {
 }
 
 .main-footer {
+  margin-top: 86px;
   background-color: #32425c;
 }
 
 .log {
   margin: 0;
+  padding: 0;
   width: 220px;
   height: 68px;
   background-color: #ee3643;
@@ -1297,12 +1293,14 @@ textarea:focus {
 }
 
 .footer-copyright {
+  width: 227px;
   color: #fff;
   font-size: 16px;
   line-height: 18px;
 }
 
 .footer-social {
+  width: 126px;
   text-align: center;
 }
 
@@ -1346,7 +1344,7 @@ textarea:focus {
 .about-company .container-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 84px 0;
+  padding-top: 86px;
 }
 
 .hidden {
@@ -1369,7 +1367,7 @@ textarea:focus {
 
 /* раздел сервисы */
 
-.main-service {
+.main-service . {
   display: flex;
   flex-direction: row;
 }
@@ -1447,4 +1445,32 @@ textarea:focus {
 .tab-delivery .button-application {
   display: inline-block;
   padding: 14px 44px;
+}
+
+
+/* для footer */
+
+.footer-container {
+  margin-bottom: 46px;
+  width: 100%;
+}
+
+.main-footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-navigation {
+  display: flex;
+
+}
+
+.footer-catalog {
+  display: flex;
 }
