@@ -14,7 +14,7 @@
     <div class="navigation-wrapper">
       <div class="upper-container">
         <div class="container-wrapper">
-          <a href="#">
+          <a>
             <p class="logo">Техномарт</p>
           </a>
           <form class="search" action="/search/catalog/" method="get">
@@ -151,7 +151,7 @@
         </div>
         <ul class="catalog-list row">
           <li class="col-3">
-            <div class="catalog-item flag">
+            <div class="catalog-item">
               <a href="catalog-item.html">
                 <p class="catalog-item-image">
                   <img src="img/perforator-1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="140">
@@ -161,9 +161,9 @@
                   <span class="catalog-item-title">BFG 9000</span>
                 </h3>
               </a>
-              <div class="hidden-btn">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
               <p class="catalog-item-price">
                 <span class="old-price">32000 P.</span>
@@ -182,9 +182,9 @@
                   <span class="catalog-item-title">BFG 3000</span>
                 </h3>
               </a>
-              <div class="hidden-btn">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
               <p class="catalog-item-price">
                 <span class="old-price">22500 P.</span>
@@ -193,7 +193,7 @@
             </div>
           </li>
           <li class="col-3">
-            <div class="catalog-item flag">
+            <div class="catalog-item">
               <a href="catalog-item.html">
                 <p class="catalog-item-image ">
                   <img src="img/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="140">
@@ -204,9 +204,9 @@
                 </h3>
 
               </a>
-              <div class="hidden-btn">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
               <p class="catalog-item-price">
                 <span class="old-price">30500 P.</span>
@@ -215,7 +215,7 @@
             </div>
           </li>
           <li class="col-3">
-            <div class="catalog-item">
+            <div class="catalog-item flag">
               <a href="catalog-item.html">
                 <p class="catalog-item-image">
                   <img src="img/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="140">
@@ -226,9 +226,9 @@
                 </h3>
 
               </a>
-              <div class="hidden-btn">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
               <p class="catalog-item-price">
                 <a class="button-price" href="#">12500 P.</a>
@@ -361,33 +361,32 @@
           <a class="popup" href="https://www.google.ru/maps"><img src="img/map.jpg" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург" width="300" height="158"></a>
           <a class="button button-map" href="#">Заблудились? Напишите нам!</a>
         </div>
-        <div class="hidden">
+        <div class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <div class="map-popup" id="map-popup">
-            <img src="img/map-popup.jpg" width="940" height="448" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
-            <button class="map-close" type="button" aria-label="Закрыть"></button>
+            <img src="img/map-popap.jpg" width="943" height="449" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
           </div>
+          <button class="map-close" type="button" aria-label="Закрыть"></button>
         </div>
-        <section class="modal modal-contact hidden">
+        <section class="modal modal-contact">
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
           <h2 class="visually-hidden">Мы обязательно свяжемся с вами!</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="modal-item">
-              <label for="form-login">Ваше имя:</label>
-              <input id="form-login" type="text" name="textfield" placeholder="Имя Фамилия">
+              <label for="form-login">Ваше имя:
+              <input id="form-login" type="text" name="textfield" placeholder="Имя Фамилия"></label>
             </p>
             <p class="modal-item">
-              <label for="form-email">Ваш e-mail:</label>
-              <input id="form-email" type="email" placeholder="email@example.com">
+              <label for="form-email">Ваш e-mail:
+              <input id="form-email" type="email" placeholder="email@example.com"></label>
             </p>
             <p class="modal-item">
-              <label for="form-letter">Текст письма:</label>
-              <textarea class="textarea" id="form-letter" name="textarea" placeholder="В свободной форме"></textarea>
+              <label for="form-letter">Текст письма:
+              <textarea class="textarea" id="form-letter" name="textarea" rows="5" placeholder="В свободной форме"></textarea>
+              </label>
             </p>
-            <div class="background-btn">
-              <button class="button button-submit" type="submit">Отправить</button>
-            </div>
           </form>
+           <button class="button button-submit" type="submit">Отправить</button>
         </section>
       </div>
     </section>
@@ -436,8 +435,6 @@
         </div>
       </div>
     </div>
-
-
   </footer>
 </body>
 
