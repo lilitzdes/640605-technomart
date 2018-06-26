@@ -1408,12 +1408,12 @@ input[type="text"]::-ms-input-placeholder {
   vertical-align: middle;
 }
 
-.slide .button:hover,
-.slide .button:focus {
+.button:hover,
+.button:focus {
   background-color: #ca2c37;
 }
 
-.slide .button:active {
+.button:active {
   background-color: #ba2732;
 }
 
@@ -1585,9 +1585,8 @@ input[type="text"]::-ms-input-placeholder {
 .catalog-item-price .button-price {
   position: relative;
   z-index: 1;
-  display: inline-block;
+  display: block;
 
-  padding-left: 79px;
 
   font-size: 17px;
   font-weight: 700;
