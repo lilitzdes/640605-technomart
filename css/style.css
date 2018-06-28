@@ -1234,7 +1234,7 @@ input[type="text"]::-ms-input-placeholder {
 .new::before {
   content: "";
   position: absolute;
-  z-index: 9;
+  z-index: 3;
   top: 0;
   left: 80%;
 
@@ -1409,6 +1409,7 @@ input[type="text"]::-ms-input-placeholder {
 .slider-button-next {
   position: absolute;
   z-index: 2;
+
   width: 22px;
   height: 40px;
 
@@ -1431,9 +1432,10 @@ input[type="text"]::-ms-input-placeholder {
 
 .slider-nav .active {
   position: absolute;
+  z-index: 2;
   top: 220px;
   left: 295px;
-  z-index: 2;
+
   padding: 0 0;
 
   color: #ffffff;
@@ -1445,9 +1447,10 @@ input[type="text"]::-ms-input-placeholder {
 
 .slider-nav .dot {
   position: absolute;
+  z-index: 2;
   top: 220px;
   left: 317px;
-  z-index: 2;
+
   padding: 3px 3px;
 
   border: solid 2px #ffffff;
@@ -1580,7 +1583,7 @@ input[type="text"]::-ms-input-placeholder {
 .flag::before {
   content: "";
   position: absolute;
-  z-index: 9;
+  z-index: 5;
   top: -1px;
   left: 160px;
 
@@ -1979,20 +1982,32 @@ input[type="text"]::-ms-input-placeholder {
 }
 
 .modal-map {
-  z-index: 10;
-  top: 60%;
-  bottom: 355px;
+  z-index: 5;
+  top: 30%;
+  bottom: 50%
 
   width: 943px;
+
   height: 449px;
-  margin-top: -280px;
 
   -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.35);
           box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.35);
 }
 
-.modal-map div {
+.modal-map p {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
   margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 5;
+
+  border: none;
 }
 
 .map-close {
@@ -2088,6 +2103,7 @@ input[type="text"]::-ms-input-placeholder {
 
 .modal-close {
   position: absolute;
+  z-index: 5;
   top: 16px;
   right: 9px;
 }
@@ -2100,8 +2116,8 @@ input[type="text"]::-ms-input-placeholder {
   left: 50%;
 
   width: 620px;
-  margin-left: -290px;
-  padding: 45px 80px 37px 80px;
+  margin-left: -310px;
+  padding: 55px 80px 37px 80px;
 
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #ffffff), color-stop(75%, #f4f4f4));
   background-image: -webkit-linear-gradient(#ffffff 75%, #f4f4f4 75%);
@@ -2146,7 +2162,7 @@ input[type="text"]::-ms-input-placeholder {
 
 .modal-item input,
 .textarea {
-  margin-top: 10px;
+  margin-top: 8px;
   padding-left: 16px;
 
   border: 2px solid #b5b5b5;
@@ -2291,14 +2307,13 @@ textarea::placeholder {
 }
 
 .modal-buy {
-  position: absolute;
   z-index: 10;
-  top: 60%;
+  top: 56%;
   left: 50%;
 
   width: 620px;
   min-width: 282px;
-  margin-left: -330px;
+  margin-left: -310px;
   padding: 55px 80px 37px 80px;
 
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(60%, #f4f4f4));
@@ -2325,9 +2340,9 @@ textarea::placeholder {
 .modal-buy p {
   position: relative;
 
-  padding-top: 20px;
-  padding-bottom: 68px;
-  padding-left: 32px;
+  padding-top: 14px;
+  padding-bottom: 77px;
+  padding-left: 50px;
 
   text-align: center;
 }
@@ -2351,14 +2366,7 @@ textarea::placeholder {
   padding: 11px 58px;
 }
 
-.modal-button {
-  width: 21px;
-  height: 21px;
 
-  border: none;
-  background-color: transparent;
-  background-image: url(../img/icon-close.svg);
-}
 
 .button-close {
   margin: 0;
@@ -2371,9 +2379,9 @@ textarea::placeholder {
   line-height: 18px;
   color: #000000;
   border: none;
+  cursor: pointer;
   text-transform: uppercase;
   background-color: #ffffff;
-  cursor: pointer;
 }
 
 .seo-text {
@@ -2606,6 +2614,7 @@ textarea::placeholder {
 
 .slider-guarantee {
   display: none;
+
   width: 379px;
 }
 
@@ -2673,6 +2682,7 @@ textarea::placeholder {
 .service-slider {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
