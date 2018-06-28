@@ -296,22 +296,22 @@
               </ul>
             </div>
             <ul class="service-slider">
-              <li class="slider-1">
-                <div class="tab-delivery">
-                  <h3 class="for-img-1">Доставка</h3>
+              <li class="tab-delivery">
+                <div class="slider-delivery">
+                  <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!</p>
                   <p>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                 </div>
               </li>
-              <li class="slider-2">
-                <div class="tab-delivery ">
-                  <h3 class="for-img-2">Гарантия</h3>
+              <li class="tab-delivery">
+                <div class="slider-guarantee">
+                  <h3>Гарантия</h3>
                   <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
                 </div>
               </li>
-              <li class="slider-3">
-                <div class="tab-delivery">
-                  <h3 class="for-img-3">Кредит</h3>
+              <li class="tab-delivery">
+                <div class="slider-credit">
+                  <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
                   <a class="button button-application" href="#">Отправить заявку</a>
                 </div>
@@ -343,9 +343,8 @@
         <div class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <div class="map-popup" id="map-popup">
-            <img src="img/map-popap.jpg" width="943" height="449" alt="Карта офиса компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
           </div>
-          <button class="map-close" type="button" aria-label="Закрыть"></button>
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </div>
         <section class="modal modal-contact">
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
@@ -353,11 +352,11 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="modal-item">
               <label for="form-login">Ваше имя:
-              <input id="form-login" type="text" name="textfield" placeholder="Имя Фамилия" required></label>
+              <input id="form-login" type="text" name="login" placeholder="Имя Фамилия"></label>
             </p>
             <p class="modal-item">
               <label for="form-email">Ваш e-mail:
-              <input id="form-email" type="email" placeholder="email@example.com" required></label>
+              <input id="form-email" name="email" type="email" placeholder="email@example.com"></label>
             </p>
             <p class="modal-item">
               <label for="form-letter">Текст письма:
@@ -365,8 +364,7 @@
               </label>
             </p>
             <button class="button button-submit" type="submit">Отправить</button>
-          </form>
-           
+          </form> 
         </section>
       </div>
     </section>
@@ -416,6 +414,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/external.js"></script>
 </body>
 
 </html>
