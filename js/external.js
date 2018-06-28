@@ -1,11 +1,13 @@
+
 var form = document.querySelector(".button-map");
 var formPopup = document.querySelector(".modal-contact");
+
+if (formPopup) {
 var formClose = formPopup.querySelector(".modal-close");
-
-
 var modalForm = formPopup.querySelector(".modal-form");
 var login = formPopup.querySelector("[name=login]");
 var email = formPopup.querySelector("[name=email]");
+}
 
 var isStorageSupport = true;
 var storage = "";
@@ -56,8 +58,6 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
-
-
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
@@ -85,7 +85,6 @@ var mapClose = mapPopup.querySelector(".modal-close");
 var link = document.querySelectorAll(".buy");
 var popup = document.querySelector(".modal-buy");
 var close = popup.querySelector(".modal-close");
-
 
 for (var i = 0; i < link.length; i++) {
 	link[i].addEventListener("click", function (evt) {
