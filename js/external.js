@@ -1,6 +1,5 @@
-
-var form = document.querySelector(".button-map");
 var formPopup = document.querySelector(".modal-contact");
+var form = document.querySelector(".button-map");
 
 if (formPopup) {
 var formClose = formPopup.querySelector(".modal-close");
@@ -18,6 +17,7 @@ var storage = "";
     isStorageSupport = false;
   }
 
+if (formPopup) {
 form.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	formPopup.classList.add("modal-show");
@@ -29,6 +29,7 @@ form.addEventListener("click", function (evt) {
       login.focus();
     }
   });
+
 
 formClose.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -48,7 +49,7 @@ modalForm.addEventListener("submit", function (evt) {
       }
     }
 	});
-
+}
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
@@ -58,11 +59,15 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
+
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
+
+if (mapPopup) {
 var mapClose = mapPopup.querySelector(".modal-close");
+}
 
-
+if (mapPopup) {
 	mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
@@ -72,10 +77,11 @@ var mapClose = mapPopup.querySelector(".modal-close");
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
   });
+ }
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+    	evt.preventDefault();
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
       }
@@ -84,8 +90,11 @@ var mapClose = mapPopup.querySelector(".modal-close");
 
 var link = document.querySelectorAll(".buy");
 var popup = document.querySelector(".modal-buy");
-var close = popup.querySelector(".modal-close");
 
+if (popup) {
+var close = popup.querySelector(".modal-close");
+var closeButton = popup.querySelector(".button-close");
+}
 for (var i = 0; i < link.length; i++) {
 	link[i].addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -93,11 +102,19 @@ for (var i = 0; i < link.length; i++) {
 	});
 };
 
+if (popup) {
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
   });
+}
 
+if (popup) {
+closeButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+}
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
