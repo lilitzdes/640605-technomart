@@ -1047,6 +1047,12 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.sort-bar-up {
+  position: absolute;
+  top: 10px;
+  right: 49px;
+}
+
 .sort-bar-down {
   position: absolute;
   top: 10px;
@@ -1057,18 +1063,28 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-bar-item a:hover,
-.sort-bar-item-2 a:hover,
-.sort-bar-item a:focus,
-.sort-bar-item-2 a:focus {
+.sort-bar-item a:focus {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
 
-.sort-bar-item a:active,
-.sort-bar-item-2 a:active {
+.sort-bar-item a:active {
   color: #ee3643;
   border: none;
 }
+
+.sort-item-current a {
+  color: #ee3643;
+  border: none;
+}
+
+.sort-item-current a:hover,
+.sort-item-current a:focus,
+.sort-item-current a:active {
+  color: #ee3643;
+  border: none;
+}
+
 
 .sort-bar-up svg,
 .sort-bar-down svg {
@@ -1087,6 +1103,12 @@ input[type="radio"].visually-hidden {
   opacity: 1;
   fill: #ee3643;
 }
+
+.sort-bar-current svg {
+  opacity: 1;
+  fill: #ee3643
+}
+
 
 .category {
   margin-bottom: 10px;
@@ -2006,15 +2028,6 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.modal-item input:-moz-placeholder {
-  margin-top: 7px;
-  padding-left: 16px;
-  border: solid 2px #dee3e4;
-  font-family: "PT Sans", Arial, sans-serif;
-  border-radius: 2px;
-  background-color: transparent;
-}
-
 .modal-item:nth-child(1),
 .modal-item:nth-child(2) {
   width: 220px;
@@ -2127,10 +2140,12 @@ textarea::placeholder {
   border: 1px solid #ee3643;
 }
 
-.pagination-item-current a:focus {
+.pagination-item-current a {
   color: #ffffff;
   background-color: #ee3643;
 }
+
+
 
 .modal-buy {
   z-index: 10;
