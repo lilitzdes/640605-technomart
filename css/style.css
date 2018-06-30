@@ -725,7 +725,7 @@ input[type="radio"].visually-hidden {
 .filters h3 {
   width: 220px;
   margin: 0;
-  padding: 10px 0 10px 18px;
+  padding: 10px 0 8px 18px;
   font-family: inherit;
   font-size: 13px;
   font-weight: 400;
@@ -1008,7 +1008,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 11px 0 11px 19px;
   list-style: none;
   background-color: #f7f3ec;
@@ -1724,7 +1724,7 @@ input[type="radio"].visually-hidden {
 
 .company-list {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -2203,7 +2203,7 @@ textarea::placeholder {
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 68px;
+  padding-bottom: 65px;
   background-color: #f2f6f8;
   ;
 }
@@ -2374,7 +2374,7 @@ textarea::placeholder {
 
 .service-head {
   min-width: 398px;
-  margin-bottom: 70px;
+  margin-bottom: 66px;
   padding-top: 42px;
   -ms-flex-item-align: start;
   align-self: flex-start;
