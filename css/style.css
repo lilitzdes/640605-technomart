@@ -1046,7 +1046,8 @@ input[type="radio"].visually-hidden {
 
 .sort-bar-down {
   position: absolute;
-  right: 18px;
+  top: 10px;
+  right: 17px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1398,7 +1399,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list li {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .catalog-item {
@@ -2523,7 +2524,7 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  padding-top: 38px;
+  padding-top: 37px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
@@ -2587,7 +2588,8 @@ textarea::placeholder {
 }
 
 .footer-social {
-  padding-left: 94px;
+  padding-left: 91px;
+  margin-top: -3px;
 }
 
 .footer-social ul {
@@ -2596,7 +2598,7 @@ textarea::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 126px;
+  width: 132px;
   margin: 0;
   padding: 0;
   list-style: none;
