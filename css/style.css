@@ -123,7 +123,7 @@ input[type="radio"].visually-hidden {
 
 .upper-container {
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   background-color: #293449;
 }
 
@@ -210,7 +210,6 @@ input[type="radio"].visually-hidden {
 .main-search {
   width: 270px;
   padding-top: 12px;
-  padding-bottom: 12px;
   padding-left: 49px;
   border: none;
   background: #293449;
@@ -311,7 +310,7 @@ input[type="radio"].visually-hidden {
 .basket {
   position: relative;
   display: block;
-  padding: 12px 32px 11px 50px;
+  padding: 12px 30px 11px 50px;
 }
 
 .catalog-basket {
@@ -625,7 +624,6 @@ input[type="radio"].visually-hidden {
   padding: 20px 30px 24px 30px;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   vertical-align: middle;
 }
 
@@ -1348,7 +1346,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-wrapper {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .headline-product {
@@ -1699,7 +1697,7 @@ input[type="radio"].visually-hidden {
 
 .about-company p {
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -1713,7 +1711,7 @@ input[type="radio"].visually-hidden {
 
 .about-company h2 {
   margin: 0;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -1724,7 +1722,7 @@ input[type="radio"].visually-hidden {
 
 .company-list {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -1768,7 +1766,7 @@ input[type="radio"].visually-hidden {
 
 .company-map p {
   width: 179px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .company-map {
@@ -1779,7 +1777,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company-map img {
-  margin: 0 0 35px 0;
+  margin: 0 0 36px 0;
 }
 
 .modal-map {
@@ -2232,7 +2230,7 @@ textarea::placeholder {
 }
 
 .main-footer {
-  margin-top: 84px;
+  margin-top: 85px;
   background-color: #32425c;
 }
 
@@ -2355,7 +2353,7 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 79px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
@@ -2374,7 +2372,7 @@ textarea::placeholder {
 
 .service-head {
   min-width: 398px;
-  margin-bottom: 66px;
+  margin-bottom: 69px;
   padding-top: 42px;
   -ms-flex-item-align: start;
   align-self: flex-start;
