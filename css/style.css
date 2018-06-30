@@ -123,6 +123,7 @@ input[type="radio"].visually-hidden {
 
 .upper-container {
   width: 100%;
+  min-height: 42px;
   margin-bottom: 47px;
   background-color: #293449;
 }
@@ -210,6 +211,7 @@ input[type="radio"].visually-hidden {
 .main-search {
   width: 270px;
   padding-top: 12px;
+  padding-bottom: 11px;
   padding-left: 49px;
   border: none;
   background: #293449;
@@ -816,6 +818,7 @@ input[type="radio"].visually-hidden {
   background: #ababab;
 }
 
+
 .range-control {
   position: relative;
   width: 220px;
@@ -1105,7 +1108,7 @@ input[type="radio"].visually-hidden {
 .new::before {
   content: "";
   position: absolute;
-  z-index: 3;
+  z-index: 6;
   top: 0;
   left: 80%;
   width: 60px;
@@ -1508,7 +1511,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .actions {
   position: absolute;
-  z-index: 6;
+  z-index: 5;
   top: 0;
   left: 0;
   display: none;
