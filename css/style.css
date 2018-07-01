@@ -82,11 +82,9 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
+  flex-wrap: wrap;
   margin: 0 -10px;
   padding: 0;
-
   list-style: none;
 }
 
@@ -114,8 +112,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: column;
-
+  flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -123,7 +120,6 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
 }
-
 
 .upper-container {
   width: 100%;
@@ -143,22 +139,18 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
-
 
 .navigation-wrapper .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
-
   -webkit-box-pack: end;
   -ms-flex-pack: end;
 }
-
 
 .logo {
   display: inline-block;
@@ -535,8 +527,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-
-
 .user svg {
   position: absolute;
   top: 12px;
@@ -554,7 +544,6 @@ input[type="radio"].visually-hidden {
   height: 17px;
   opacity: 0.3;
 }
-
 
 .login-link-catalog {
   color: #000;
@@ -863,7 +852,6 @@ input[type="radio"].visually-hidden {
   background: #ababab;
 }
 
-
 .range-control {
   position: relative;
   width: 220px;
@@ -1125,7 +1113,6 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-
 .sort-bar-up svg,
 .sort-bar-down svg {
   opacity: 0.3;
@@ -1148,7 +1135,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
   fill: #ee3643
 }
-
 
 .category {
   margin-bottom: 10px;
@@ -2334,11 +2320,11 @@ textarea::placeholder {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.log:hover {
+.log:hover,
+.log:focus {
   background-color: #ca2c37;
 }
 
-.log:focus,
 .log:active {
   background-color: #ba2732;
 }
@@ -2683,18 +2669,15 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
   width: 132px;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
-
 
 .footer-social .social-button {
   border-radius: 50px;
