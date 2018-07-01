@@ -739,7 +739,7 @@ input[type="radio"].visually-hidden {
 .page-title {
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 31px;
+  padding-top: 34px;
   padding-bottom: 29px;
   padding-left: 30px;
   font-family: "Cuprum", "PT Sans", Arial, sans-serif;
@@ -758,7 +758,7 @@ input[type="radio"].visually-hidden {
 .filters h3 {
   width: 220px;
   margin: 0;
-  padding: 10px 0 8px 18px;
+  padding: 8px 0 8px 18px;
   font-family: inherit;
   font-size: 13px;
   font-weight: 400;
@@ -1037,8 +1037,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 18px;
-  padding: 11px 0 11px 19px;
+  margin-bottom: 22px;
+  padding: 8px 0 9px 19px;
   list-style: none;
   background-color: #f7f3ec;
   -webkit-box-pack: justify;
